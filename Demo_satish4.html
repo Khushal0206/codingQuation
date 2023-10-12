@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domo4</title>
+</head>
+<body>
+    <script>
+        var mat =[[2,45,31],[4,54,2],[3,5,13]];
+        var tran =[[],[],[]]
+        // for(var i=0;i<=2;i++){
+        //     for(var j=0;j<=2;j++){
+        //          mat[i][j] =prompt("enter element")
+        //     }
+        // }
+        for(var i=0;i<=2;i++){
+            for(var j=0;j<=2;j++){
+                document.writeln(mat[i][j])
+            }
+            document.write("<br>")
+        }
+
+        for(var i=0;i<=2;i++){
+            for(var j=0;j<=2;j++){
+                tran[i][j]= mat[j][i];
+            }
+        }
+        document.write(" transpose of matrix <br> ")
+        for(var i=0;i<=2;i++){
+            for(var j=0;j<=2;j++){
+                document.writeln(tran[i][j])
+            }
+            document.write("<br>")
+        }
+    </script>
+    
+</body>
+</html>

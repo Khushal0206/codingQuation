@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo58</title>
+</head>
+<body>
+    <script>
+        var S = new Set();
+        var arr1 = [23,55,6,78,9];
+        var arr2 = [23,89,45,6,7];
+        var value = arr1.filter(ele=>!arr2.includes(ele))
+        var value1 = arr2.filter(ele=>!arr1.includes(ele))
+        console.log(value)
+        console.log(value1)
+        S.add(value1)
+        S.add(value)
+
+
+        console.log(S)
+    </script>
+    
+</body>
+</html>

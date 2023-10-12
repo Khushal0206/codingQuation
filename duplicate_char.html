@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>duplicate chareter in string</title>
+</head>
+<body>
+<script>
+    var Name = "khushal";
+    for(var i =0;i<=Name.length;i++){
+        for(var j= i+1;j<=Name.length;j++){
+           if (Name[i]==Name[j]){
+               console.log(Name[i]);
+               break;
+               
+           }
+        }
+    }
+</script>
+</body>
+</html>

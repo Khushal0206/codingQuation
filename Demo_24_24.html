@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 24</title>
+</head>
+<body>
+    <script>
+        var temp;
+        var arr =[23,4,78,34,99,11];
+        for(var i=0;i<=arr.length;i++){
+            for(var j=i;j<=arr.length;j++){
+                if(arr[i]>arr[j]){
+                   temp = arr[i];
+                   arr[i]= arr[j];
+                   arr[j]=temp;
+
+                }
+            }
+            console.log(arr[i])
+        }
+    </script>
+    
+</body>
+</html>

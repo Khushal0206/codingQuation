@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arstrom number</h1>
+    <script>
+        var orignalnum =153;
+        var remender;
+        var result=0;
+        var num=orignalnum;
+        while (num!=0) {
+            remender = num%10;
+            result = result+Math.pow(remender,3);
+            num =parseInt(num/10);
+            
+        }
+        if(result==orignalnum){
+            console.log("number is arstrong ")
+        }else{
+            console.log("not arstrong ")
+        }
+        
+    </script>
+</body>
+</html>

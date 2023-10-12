@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo57</title>
+</head>
+<body>
+    <script>
+        var sum=0
+        var mark = new Array()
+        for(var i=0;i<=5;i++){
+
+             mark[i]= parseInt(prompt("enter  your number"))
+        }
+        console.log(mark)
+        console.log(typeof mark[2])
+        for(var i=0;i<=mark.length-1;i++){
+            sum = sum+mark[i]
+        }
+        var percentage = sum/5;
+        console.log(percentage)
+    </script>
+    
+</body>
+</html>

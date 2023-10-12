@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo42</title>
+</head>
+<body>
+    <script>
+         var arr = [43,4,67,336,46,89,66,34,34];
+         var temp;
+
+        // var increasing=  arr.sort((a,b)=>a-b);
+        // var decrising =  arr.sort((a,b)=>b-a);
+        // console.log(increasing)
+        //   console.log(decrising)
+        // console.log(arr);
+
+        for(var i=0;i<=arr.length;i++){
+            for(var j=i+1;j<=arr.length;j++){
+                if(arr[i]<arr[j]){
+                    temp = arr[i];
+                    arr[i]=arr[j];
+                    arr[j]= temp;
+
+                }
+            }
+
+        }
+        console.log(arr);
+        console.log("sencond highest number is " +arr[1])
+
+
+
+    </script>
+    
+</body>
+</html>

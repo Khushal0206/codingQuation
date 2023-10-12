@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domo6</title>
+</head>
+<body>
+    <script>
+        var arr = [10,7,3,5,7,2,4,8];
+        
+        //find minumum element
+        var index1 =0//find index of minumum element
+           var min = arr[0];
+           for(var i=0;i<=arr.length;i++){
+            if(min>arr[i]){
+                min = arr[i];
+                index1=i
+            }
+           }
+           //console.log(min)
+
+           //find maximum element
+           var index2 = 0 ;//find index of maximum element
+        var max = arr[index1];
+        for(var i=index1;i<=arr.length;i++){
+            if(max<arr[i]){
+                max= arr[i];
+                index2=i
+            }
+        }
+        //console.log(index2)
+        //console.log(max)
+
+          //find total maximum profit  
+        console.log("if someone buy a stock "+( index1+1) +" day "+ " and sell it "+ 
+        (index2+1)+" day  then total maximun profit is : "+(max-min))
+    
+           
+    
+    </script>
+    
+</body>
+</html>

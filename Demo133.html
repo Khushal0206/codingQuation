@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strong number</title>
+</head>
+<body>
+    <script>
+        var num= 145;
+        var orignalnum= num;
+        var sum=1;
+        var result=0;
+        while(num!=0){
+            var rem= num%10;
+            num = parseInt(num/10);
+            for(var i=1;i<=rem;i++){
+                sum=sum*i;
+            }
+            result = result+sum;
+            sum=1
+        }
+        if(result==orignalnum){
+            console.log("number is strong number " )
+        }else{
+            console.log("number  is not  strong number " )
+
+        }
+        console.log(result)
+    </script>
+</body>
+</html>

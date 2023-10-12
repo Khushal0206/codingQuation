@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr =[34,56,23,45,78,34,23,45,34];
+        const newArr = [];
+        // var S = new Set();
+        // for (let index = 0; index < arr.length; index++) {
+        //     S.add(arr[index])
+        // }
+        // console.log(S)
+
+        arr.forEach((ele)=>{
+        if(!newArr.includes(ele)) {
+            newArr.push(ele);
+
+        }})
+        for(var i=0;i<newArr.length;i++){
+            console.log("new array is : "+ newArr[i])
+        }
+
+           </script>
+    
+</body>
+</html>

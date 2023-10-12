@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Deuplicaton array</title>
+</head>
+<body>
+    <script>
+        var arr = [23,66,5443,23,56,35,33,66];
+        var arr1 =[];
+        arr.forEach((ele)=>{
+            if(!arr1.includes(ele)){
+                arr1.push(ele)
+            }
+        })
+        console.log(arr1)
+    </script>
+</body>
+</html>

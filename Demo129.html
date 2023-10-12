@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo_129</title>
+</head>
+<body>
+    <script>
+
+        var upper= 100;
+        var lower = 300;
+        var result = 0;
+        var temp=0;
+        for(var i=upper;i<=lower;i++){
+            var k=i;
+            result = 0
+            while (k>0) {
+                rem = k%10;
+                result = result*10 + rem;
+                k = parseInt(k/10);
+
+                
+            }
+            if(result==i){
+               // console.log("penlindrom : " ,i)
+                for(var j=2;j<i;j++){
+                if(i%j==0){
+                    temp++
+                }
+            }
+         if(temp==0){
+            console.log("prime penlindrom number is "+i)
+         }else{
+            temp=0
+         }
+            }
+        }
+
+        // for(var i=upper;i<=lower;i++){
+        //     for(var j=2;j<i;j++){
+        //         if(i%j==0){
+        //             temp++
+        //         }
+        //     }
+        //  if(temp==0){
+        //     console.log(i)
+        //  }else{
+        //     temp=0
+        //  }
+        // }
+    </script>
+    
+</body>
+</html>

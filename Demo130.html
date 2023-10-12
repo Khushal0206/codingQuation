@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domo130</title>
+</head>
+<body>
+    <script>
+        var arr ="hello";
+        temp=0;
+        for(var i=0;i<=arr.length-1;i++){
+            for(var j=i+1;j<=arr.length-1;j++){
+                if(arr[i]==arr[j]){
+                    temp++
+                }
+            }
+            if(temp==0){
+                document.write(arr[i])
+            }else{
+                temp=0
+            }
+        }
+
+       
+        
+    </script>
+    
+</body>
+</html>

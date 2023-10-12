@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>reverse</h1>
+    <script>
+        var number = 1238445;
+        var remender;
+        var result=0;
+        while(number!=0){
+            remender= number%10;
+            result = (result*10)+remender;
+            number= number/10;
+        }
+        document.writeln("reverse: "+ result)
+    </script>
+</body>
+</html>

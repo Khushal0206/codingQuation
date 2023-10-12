@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 117</title>
+</head>
+<body>
+    <script>
+        var orignalnumber =1634;
+        var numberlength = orignalnumber;
+        var number = orignalnumber;
+        var result =0 ,rem;
+        var length=0;
+        while(numberlength>0){
+            rem = numberlength%10;
+            numberlength = parseInt(numberlength/10);
+            length++;
+        }
+        console.log("lenght is : "+length)
+
+        while (number>0) {
+             rem = number%10;
+            var result = result+Math.pow(rem,length)
+            var number = parseInt(number/10)
+        }
+        if(result==orignalnumber){
+            console.log("number is armstrong")
+        }else{
+            console.log("number not is armstrong")
+
+        }
+    </script>
+    
+</body>
+</html>

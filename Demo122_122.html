@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 122</title>
+</head>
+<body>
+    <script>
+        var lower = 1; 
+        var upper=400;
+        var result=0;
+        for(var i=lower;i<=upper;i++){
+            //find length of number
+            var len =i;
+            result1=0
+            while(len!=0){
+                var rem= len%10;
+                len = parseInt(len/10);
+                result1++
+            }
+           // console.log(result1)
+            // find number is argstrom or not 
+                 var num=i;
+            while(num!=0){
+                var rem= num%10;
+                result = result+Math.pow(rem,result1);
+                num=parseInt(num/10);
+                
+            }
+            result1=0;
+            
+            if(i==result){
+                console.log(i)
+            }
+            result=0;
+
+        }
+    </script>
+</body>
+</html>

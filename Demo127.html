@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = 12345;
+        var result=0;
+        while (num>0) {
+            var rem = num%10;
+            var result = rem+result;
+            var num= parseInt(num/10);
+            
+        }
+        console.log(result)
+        var result1=0;
+        while(result>9){
+            var rem = result%10;
+            var result1 = result1+rem;
+            var result = parseInt(result/10)
+
+        }
+        console.log(result1)
+    </script>
+    
+</body>
+</html>

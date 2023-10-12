@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>remove duplication</h1>
+    <script>
+        const num = [12,34,23,45,12,34,56,45];
+        var remove = new Set();
+        for (let index = 0; index < num.length; index++) {
+            remove.add(num[index]);
+            
+        }
+        console.log(remove)
+    </script>
+</body>
+</html>

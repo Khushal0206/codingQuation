@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const num = [23, 45, 67, 553, 34, 22, 23, 553];
+        const non_duplicate = [];
+        for (let index = 0; index <= num.length; index++) {
+            for (var i = index +1; i <= num.length; i++) {
+                if (num[index] != num[i]) {
+                    non_duplicate.push(num[index]);
+                }
+            }
+
+        }
+        for (var j = 0; j <= non_duplicate.length; j++) {
+            console.log(non_duplicate[j])
+        }
+    </script>
+
+</body>
+
+</html>
